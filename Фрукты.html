@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список фруктов</title>
+    <style>
+        /* Общие настройки страницы */
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Times, serif, sans-serif;
+            background-color: #f66c6c;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 50px;
+        }
+
+        /* Стили для всего списка */
+        .fruit-list {
+            list-style-type: none; /* Убираем стандартные маркеры */
+            padding: 0;
+            margin: 0;
+            width: 300px;
+            background-color: #f26ff47f; /* Светлый фон контейнера */
+            border: 2px solid #ec0e28; /* Серая рамка вокруг списка */
+            border-radius: 8px;
+        }
+
+        /* Стили для элементов списка */
+        .fruit-item {
+            /* Отступы внутри элемента (padding) — пространство между границей и содержимым */
+            padding: 15px 20px;
+            /* Отступы снаружи (margin) разделяют пункты. Отрицательный margin у самого списка помогает краям визуально прилегать к рамке без разрывов */
+            margin: 2px 10 10 10;
+            background-color: #f46096; /* Более тёмный фон для одного элемента */
+            border-bottom: 1px solid #f32512;
+        }
+
+        /* Самый тёмкий фон только под текстом */
+        .text-highlight {
+            background-color: #f60a0a; /* Самый тёмный цвет фона */
+            color: rgba(242, 37, 225, 0.749); /* Текст делаем белым для контраста */
+            padding: 2px 6px; /* Внутренние отступы текста */
+            border-radius: 54px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="fruit-list">
+        <li class="fruit-item">
+            <span class="text-highlight">Apple</span>
+        </li>
+        <li class="fruit-item">Orange</li>
+        <li class="fruit-item">Pineapple</li>
+        <li class="fruit-item">Pear</li>
+        <li class="fruit-item">Cherry</li>
+    </ul>
+</body>
+</html>
